@@ -6,7 +6,7 @@
 # hakkly
 print("hakkly v1.0.0 - hello from hakkly")
 import sys
-if len(sys.argv) >= 1:
+if len(sys.argv) >= 2:
     print("hakk num get")
 else:
     raise Exception("you didnt type a number!!!! >:(")
