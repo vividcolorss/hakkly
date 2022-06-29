@@ -12,7 +12,7 @@ or [use the terminal.](https://github.com/89paradox/hakkly/edit/main/README.md#t
 ### Terminal Method:
 use the following command:
 
-```wget https://raw.githubusercontent.com/89paradox/hakkly/main/installer.sh | bash installer.sh```
+```wget https://raw.githubusercontent.com/89paradox/hakkly/main/installer.sh && bash installer.sh```
 
 
 ## How To Use:
