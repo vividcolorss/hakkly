@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 
 
@@ -6,6 +6,10 @@
 # hakkly
 print("hakkly v1.0.0 - hello from hakkly")
 import sys
+if sys.argv.len() >= 1:
+    print("hakk num get")
+else:
+    raise Exception("you didnt type a number!!!! >:(")
 if sys.argv[1] == "1":
     a = True
 elif sys.argv[1] == "2":
@@ -23,6 +27,7 @@ from mcpi.minecraft import Minecraft
 import keyboard
 import time
 mc = Minecraft.create() # gain access to mc
+print("were in")
 ## ABOVE REQUIRED
 while a:
     x,y,z = mc.player.getPos() # get position
