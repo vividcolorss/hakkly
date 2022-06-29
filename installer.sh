@@ -5,3 +5,5 @@ cd hakkly # go into it
 sudo cp ./hakkly /usr/sbin/ # copy to /usr/sbin
 sudo chmod +X /usr/sbin/hakkly # make executable
 echo finished!
+cd ..
+rm -rf ./installer.sh
