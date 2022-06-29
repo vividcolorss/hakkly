@@ -1,0 +1,72 @@
+#!/usr/bin/env python
+
+
+
+
+# hakkly
+print("hakkly v1.0.0 - hello from hakkly")
+import sys
+if sys.argv[1] == "1":
+    a = True
+elif sys.argv[1] == "2":
+    b = True
+    a = False
+elif sys.argv[1] == "3":
+    c = True
+    b = False
+    a = False
+
+
+
+# DA CODEZZZZZZZZZZZZZZZZZZ
+from mcpi.minecraft import Minecraft
+import keyboard
+import time
+mc = Minecraft.create() # gain access to mc
+## ABOVE REQUIRED
+while a:
+    x,y,z = mc.player.getPos() # get position
+    mc.setBlock(x,y-1,z, 1)
+    mc.setBlock(x-1,y-1,z, 0)
+    mc.setBlock(x,y-1,z-1, 0)
+    mc.setBlock(x+1,y-1,z, 0)
+    mc.setBlock(x,y-1,z+1, 0)
+    mc.setBlock(x-1,y-1,z-1, 0)
+    mc.setBlock(x+1,y-1,z+1, 0)
+    # ------
+    mc.setBlock(x,y-2,z, 0)
+    mc.setBlock(x-1,y-2,z, 0)
+    mc.setBlock(x,y-2,z-1, 0)
+    mc.setBlock(x+1,y-2,z, 0)
+    mc.setBlock(x,y-2,z+1, 0)
+    mc.setBlock(x-1,y-2,z-1, 0)
+    mc.setBlock(x+1,y-2,z+1, 0)
+while b:
+    if keyboard.is_pressed('backspace'):
+        x,y,z = mc.player.getPos()
+        y = y - 1
+        y = round(y)
+        while y != -64:
+            y = y - 1
+            mc.setBlock(x,y+1,z, 0)
+            mc.setBlock(x,y-1,z, 1)
+            mc.setBlock(x-1,y-1,z, 0)
+            mc.setBlock(x,y-1,z-1, 0)
+            mc.setBlock(x+1,y-1,z, 0)
+            mc.setBlock(x,y-1,z+1, 0)
+            mc.setBlock(x-1,y-1,z-1, 0)
+            mc.setBlock(x+1,y-1,z+1, 0)
+            # ------
+            mc.setBlock(x,y-2,z, 0)
+            mc.setBlock(x-1,y-2,z, 0)
+            mc.setBlock(x,y-2,z-1, 0)
+            mc.setBlock(x+1,y-2,z, 0)
+            mc.setBlock(x,y-2,z+1, 0)
+            mc.setBlock(x-1,y-2,z-1, 0)
+            mc.setBlock(x+1,y-2,z+1, 0)
+            time.sleep(0.01)
+        mc.setBlock(x,y,z,0)
+while c:
+	mc.postToChat("Lorem ipsum dolor sit amet")
+	mc.postToChat("omega gamer 029350 ")
+	mc.postToChat("lol pwnnnnnnnnn")
