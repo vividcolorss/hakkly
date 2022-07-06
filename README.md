@@ -6,8 +6,6 @@
 
 
 ## Installing:
-[![badge](https://github.com/Botspot/pi-apps/blob/master/icons/badge.png?raw=true)](https://github.com/Botspot/pi-apps)
-or [use the terminal.](https://github.com/89paradox/hakkly/edit/main/README.md#terminal)
 
 ### Terminal Method:
 use the following command:
